@@ -1,0 +1,93 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  /* color: rgba(255, 255, 255, 0.87); */
+  /* background-color: #242424; */
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+.parallax {
+  height: 100vh; /* Set the desired height of the parallax section */
+  /* background: linear-gradient(
+    45deg,
+    #4b0082 15%,
+    #007fff
+  ); Set your desired gradient colors */
+  position: relative;
+  /* Photo by Codioful (formerly Gradienta): https://www.pexels.com/photo/purple-and-blue-gradient-6985265/ */
+  background-image: url("./aboutme-bg.jpg");
+  /* background: linear-gradient(135deg, #f6d365 0%, #fda085 100%); */
+  /* background: linear-gradient(to bottom, #57059e, #4a00e0); */
+  /* background: linear-gradient(45deg, #9c27b0, #673ab7); */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.content {
+  padding: 100px; /* Set the desired padding for your content */
+  color: #000; /* Set the desired text color for your content */
+}
+
+.main-section {
+  height: 100vh;
+}
+
+.about-me-div > * {
+  flex: 1;
+}
+
+.about-me-div {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-between; */
+  align-items: center;
+  width: 100%;
+  /* z-index: 10; */
+  /* color: black; */
+  /* border: 1px solid; */
+  height: 100%;
+}
+
+.gradient-custom {
+  /* fallback for old browsers */
+  background: #6a11cb;
+
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(
+    to right,
+    rgba(106, 17, 203, 0.9),
+    rgba(37, 117, 252, 0.9)
+  );
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(
+    to right,
+    rgba(17, 51, 203, 0.9),
+    rgba(37, 117, 252, 0.9)
+  );
+}
+
+/* .custom-bg { */
+/* background-color: #ffffff !important; */
+/* box-shadow: 0px 5px grey; */
+/* margin-bottom: 10px; */
+/* background: linear-gradient(to right, #06b886, #0d0457); */
+/* } */
