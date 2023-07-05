@@ -1,23 +1,8 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  /* color: rgba(255, 255, 255, 0.87); */
-  /* background-color: #242424; */
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-}
-
 body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
+  font-family: "Poppins", sans-serif !important;
 }
 
 .parallax {
@@ -29,10 +14,11 @@ body {
   ); Set your desired gradient colors */
   position: relative;
   /* Photo by Codioful (formerly Gradienta): https://www.pexels.com/photo/purple-and-blue-gradient-6985265/ */
-  background-image: url("./aboutme-bg.jpg");
+  /* background-image: url("./aboutme-bg.jpg"); */
   /* background: linear-gradient(135deg, #f6d365 0%, #fda085 100%); */
   /* background: linear-gradient(to bottom, #57059e, #4a00e0); */
   /* background: linear-gradient(45deg, #9c27b0, #673ab7); */
+  background: linear-gradient(to bottom, #57059e, #4a00e0);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -43,7 +29,15 @@ body {
 
 .content {
   padding: 100px; /* Set the desired padding for your content */
-  color: #000; /* Set the desired text color for your content */
+  /* color: #000; Set the desired text color for your content */
+}
+
+.custom-bg {
+  /* background: rgb(248, 222, 181) !important; */
+  background: #f7e7ce;
+  /* background: linear-gradient(to bottom, #f7e7ce 0%, #e8d8bf 100%); */
+  /* background: linear-gradient(to bottom, #f7e7ce 0%, #e7d0ac 100%); */
+  background: rgb(252, 231, 45) !important;
 }
 
 .main-section {
@@ -85,9 +79,54 @@ body {
   );
 }
 
-/* .custom-bg { */
-/* background-color: #ffffff !important; */
-/* box-shadow: 0px 5px grey; */
-/* margin-bottom: 10px; */
-/* background: linear-gradient(to right, #06b886, #0d0457); */
-/* } */
+.logo-img {
+  width: 40px;
+  height: 40px;
+}
+
+/* .main-nav-items {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+} */
+
+.navbar-brand {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+  margin-right: 0;
+}
+
+.navbar-brand,
+.nav-link {
+  font-size: 1.25em;
+  font-weight: 500;
+  color: black;
+}
+
+.nav-link:hover,
+#myName:hover {
+  color: #57059e;
+  border-bottom: 3px solid;
+}
+
+/* nav .navbar-nav li a {
+  color: linear-gradient(to bottom, #57059e, #4a00e0) !important;
+} */
+
+#navbarNav {
+  margin-left: auto;
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.push-right {
+  margin-left: auto;
+}
