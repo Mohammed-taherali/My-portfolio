@@ -1,5 +1,6 @@
 import React from "react";
 import Typed from 'react-typed';
+import TiltComponent from "./TiltComponent";
 
 export default function AboutMe() {
     return (
@@ -29,16 +30,8 @@ export default function AboutMe() {
                     </div>
                 </div>
                 <div className="col2">
-                    <div className="img-container">
-                        <img src="/mtc-animated.png" id="mtc-animated" />
-                    </div>
+                    <TiltComponent />
                 </div>
-                {/* <Typed
-                    strings={['Here you can find anything', "web development", 'frontend development']}
-                    typeSpeed={40}
-                    backSpeed={40}
-                    loop
-                /> */}
             </div>
         </section>
     )
