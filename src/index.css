@@ -5,19 +5,8 @@ body {
   font-family: "Poppins", sans-serif !important;
 }
 
-.parallax {
-  height: 100vh; /* Set the desired height of the parallax section */
-  /* background: linear-gradient(
-    45deg,
-    #4b0082 15%,
-    #007fff
-  ); Set your desired gradient colors */
-  position: relative;
-  /* Photo by Codioful (formerly Gradienta): https://www.pexels.com/photo/purple-and-blue-gradient-6985265/ */
-  /* background-image: url("./aboutme-bg.jpg"); */
-  /* background: linear-gradient(135deg, #f6d365 0%, #fda085 100%); */
-  /* background: linear-gradient(to bottom, #57059e, #4a00e0); */
-  /* background: linear-gradient(45deg, #9c27b0, #673ab7); */
+.main-section {
+  height: 100vh;
   background: linear-gradient(to bottom, #57059e, #4a00e0);
   background-attachment: fixed;
   background-position: center;
@@ -28,68 +17,57 @@ body {
 }
 
 .content {
-  padding: 100px; /* Set the desired padding for your content */
-  /* color: #000; Set the desired text color for your content */
+  padding: 100px;
 }
 
 .custom-bg {
-  /* background: rgb(248, 222, 181) !important; */
   background: #f7e7ce;
-  /* background: linear-gradient(to bottom, #f7e7ce 0%, #e8d8bf 100%); */
-  /* background: linear-gradient(to bottom, #f7e7ce 0%, #e7d0ac 100%); */
   background: rgb(252, 231, 45) !important;
 }
 
-.main-section {
-  height: 100vh;
+.col1 {
+  color: white;
+}
+
+.col2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.colored {
+  color: rgb(255, 230, 0);
+}
+
+.colored:hover {
+  border-bottom: 3px solid;
+}
+
+.into-part {
+  margin: 1em 0;
 }
 
 .about-me-div > * {
   flex: 1;
 }
 
+.about-points {
+  font-size: 1.25em;
+}
+
 .about-me-div {
   display: flex;
   flex-direction: row;
-  /* justify-content: space-between; */
   align-items: center;
   width: 100%;
-  /* z-index: 10; */
-  /* color: black; */
-  /* border: 1px solid; */
   height: 100%;
-}
-
-.gradient-custom {
-  /* fallback for old browsers */
-  background: #6a11cb;
-
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-linear-gradient(
-    to right,
-    rgba(106, 17, 203, 0.9),
-    rgba(37, 117, 252, 0.9)
-  );
-
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  background: linear-gradient(
-    to right,
-    rgba(17, 51, 203, 0.9),
-    rgba(37, 117, 252, 0.9)
-  );
 }
 
 .logo-img {
   width: 40px;
   height: 40px;
 }
-
-/* .main-nav-items {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-} */
 
 .navbar-brand {
   display: flex;
@@ -112,10 +90,6 @@ body {
   border-bottom: 3px solid;
 }
 
-/* nav .navbar-nav li a {
-  color: linear-gradient(to bottom, #57059e, #4a00e0) !important;
-} */
-
 #navbarNav {
   margin-left: auto;
 }
@@ -129,4 +103,11 @@ body {
 
 .push-right {
   margin-left: auto;
+}
+
+.mtc-animated {
+  display: block;
+  margin: auto;
+  width: 40%;
+  height: 40%;
 }

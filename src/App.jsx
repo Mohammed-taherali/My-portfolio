@@ -1,5 +1,9 @@
 import React from "react";
 import Vanillatilt from 'vanilla-tilt';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import $ from 'jquery';
+import Popper from 'popper.js';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
 import AboutMe from "../components/AboutMe";
 import MyNav from "../components/MyNav";
 
