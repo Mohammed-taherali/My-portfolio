@@ -1,84 +1,16 @@
 body {
   margin: 0;
+  padding: 0;
+  padding-top: 65px;
   min-width: 320px;
   min-height: 100vh;
   font-family: "Poppins", sans-serif !important;
 }
 
-.main-section {
-  height: 100vh;
-  background: linear-gradient(to bottom, #57059e, #4a00e0);
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  overflow-x: hidden;
-  overflow-y: auto;
-}
-
-.content {
-  padding: 100px;
-}
+/* Navbar section css styles - start */
 
 .custom-bg {
-  background: #f7e7ce;
   background: rgb(252, 231, 45) !important;
-}
-
-.col1 {
-  color: white;
-}
-
-.col2 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 150%;
-}
-
-.colored {
-  color: rgb(255, 230, 0);
-}
-
-.colored:hover {
-  border-bottom: 3px solid;
-}
-
-.into-part {
-  margin: 1em 0;
-}
-
-.about-me-div > * {
-  flex: 1;
-}
-
-.about-points {
-  font-size: 1.25em;
-}
-
-.tiltComponent {
-  width: 100%;
-}
-
-.inner-tilt-cont {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.about-me-div {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  flex-wrap: wrap;
-}
-
-.logo-img {
-  width: 40px;
-  height: 40px;
 }
 
 .navbar-brand {
@@ -87,6 +19,10 @@ body {
   align-items: center;
   gap: 5px;
   margin-right: 0;
+}
+
+.push-right {
+  margin-left: auto;
 }
 
 .navbar-brand,
@@ -113,14 +49,120 @@ body {
   align-items: center;
 }
 
-.push-right {
-  margin-left: auto;
+.logo-img {
+  width: 40px;
+  height: 40px;
 }
 
-.inner-tilt-cont {
-  width: 500px;
-  height: 500px;
-  background-repeat: no-repeat;
-  background-size: 110%;
-  background-image: url("/mtc-animated.png");
+/* Navbar section css styles - end */
+
+/* AboutMe section css - start */
+
+.new-main-section {
+  min-height: calc(105vh - 65px);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #4a00e0;
+  color: white;
 }
+
+.new-col1,
+.new-col2 {
+  width: 50%;
+  padding: 2em;
+}
+
+.new-col2 {
+  padding-right: 0;
+}
+
+li::marker {
+  color: rgb(252, 231, 45);
+}
+
+.colored {
+  color: rgb(255, 230, 0);
+}
+
+.colored:hover {
+  border-bottom: 3px solid;
+}
+
+.into-part {
+  margin: 1em 0;
+}
+
+.about-points {
+  font-size: 1.25em;
+}
+
+#socials {
+  display: flex;
+  flex-direction: row;
+  padding-left: 2em;
+  gap: 1em;
+}
+
+.socials-holder {
+  width: 44px;
+  text-align: center;
+  background-color: black;
+  border-radius: 100%;
+}
+
+.fontawesome-icon {
+  color: #00d9ff;
+  margin: 10px;
+}
+
+.socials-holder:hover {
+  /* background-color: rgb(255, 230, 0); */
+  background-color: #57059e;
+  transition: 0.75s;
+}
+
+/* AboutMe section css - end */
+
+/* TiltComponent css - start */
+
+.tilt-container {
+  width: 80%;
+  margin: auto;
+  padding-bottom: 2em;
+}
+
+.animated-img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  height: 75%;
+}
+
+/* TiltComponent css - end */
+
+/* media queries start */
+@media (min-width: 320px) and (max-width: 414px) {
+  .new-main-section {
+    flex-direction: column;
+  }
+
+  .new-col1,
+  .new-col2 {
+    width: 100%;
+  }
+
+  .new-col1 {
+    padding: 0.75em;
+    padding-top: 1em;
+  }
+
+  .new-col2 {
+    padding: 0;
+  }
+
+  .into-part {
+    font-size: 1.25em;
+  }
+}
+/* media queries end */
