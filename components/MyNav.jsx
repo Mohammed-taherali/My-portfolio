@@ -14,7 +14,7 @@ export default function MyNav() {
                             <a className="nav-link" aria-current="page" href="#about">About</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">Skills</a>
+                            <a className="nav-link" href="#skills">Skills</a>
                         </li>
                         <li className="nav-item">
                             <a className="nav-link" href="#">Projects</a>
