@@ -73,7 +73,6 @@ export default function Skills() {
         }];
 
     const skillsSection = skills.map(skill => {
-        console.log(skill.img)
         return (
             <div key={skill.img} className="skill-cont">
                 <img src={`/assets/${skill.img}`} className="skills-icon" id={skill.name == "NodeJS" ? "node-icon" : ""} />

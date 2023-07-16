@@ -11,19 +11,19 @@ export default function MyNav() {
                 <div className="collapse navbar-collapse" id="navbarNav">
                     <ul className="navbar-nav push-right">
                         <li className="nav-item">
-                            <a className="nav-link" aria-current="page" href="#about">About</a>
+                            <a className="nav-link custom-font" aria-current="page" href="#about">About</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#skills">Skills</a>
+                            <a className="nav-link custom-font" href="#skills">Skills</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">Projects</a>
+                            <a className="nav-link custom-font" href="#">Projects</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">Education</a>
+                            <a className="nav-link custom-font" href="#">Education</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">Contact</a>
+                            <a className="nav-link  custom-font" href="#">Contact</a>
                         </li>
                     </ul>
                 </div>
