@@ -6,6 +6,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min';
 import MyNav from "../components/MyNav";
 import AboutMe from "../components/AboutMe";
 import Skills from "../components/Skills";
+import Projects from "../components/Projects";
 
 export default function App() {
   return (
@@ -13,6 +14,7 @@ export default function App() {
       <MyNav />
       <AboutMe />
       <Skills />
+      <Projects />
     </>
   )
 }
